@@ -6,7 +6,7 @@ export const sendCookie = (user, res, message, statusCode = 200) => {
     // console.log(process.env.NODE_ENV);
     // console.log(process.env.NODE_ENV === "Development");
 
-    res
+    res  
         .status(statusCode)
         .cookie("token", token, {
             httpOnly: true,
